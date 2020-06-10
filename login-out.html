@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng Nhập - Đăng Ký</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header-page">
+        <div class="top-header clearfix">
+            <div class="container">
+                <div class="left-top-header">
+                    <span><a href="trangchu.html">TÂM ĐIỂM 2020 - HỘI TIM MẠCH HỌC VIỆT NAM</a></span>
+                </div>
+                <div class="right-top-header">
+                    <!-- <p><a href="login-out.html">Đăng ký</a></p>
+                    <p><a href="login-out.html">Đăng nhập</a></p> -->
+
+                    <p><a href="#">Thoát</a></p>
+                    <p><a href="infomation.html">Khánh Nguyễn</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-header clearfix">
+            <div class="container">
+                <div class="logo">
+                    <a href="trangchu.html">
+                        <img src="asset/img/logo.png">
+                    </a>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="trangchu.html"><i class="fa fa-home"></i> Trang chủ</a>
+                        </li>
+                        <li><a href="#"><img src="asset/img/live.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="menu-mobile">
+        <div class="menu-mobile-content clearfix">
+            <a href="trangchu.html">
+                <img src="asset/img/logo.png">
+            </a>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="trangchu.html">Trang chủ</a>
+          <a href="infomation.html">Tài khoản</a>
+            <a href="#">Thoát</a>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="content-wrap">
+        <div class="banner-slider-index">
+            <div class="container">
+                <div class="tp-banner-container">
+                    <img src="asset/img/tieudiem.jpg" alt="Tâm điểm2020">
+                </div>
+                <div class="form-login mt-5 mb-5">
+                    <div class="form-section">
+                        <p>Hội Tim mạch học Việt Nam, với sự đồng hành của công ty TNHH Novartis Việt Nam, trân trọng kính mời Quý đồng nghiệp tham dự  chuỗi hội thảo trực tuyến <span class="form-td">TÂM ĐIỂM 2020</span></p>
+
+                        <p><span class="form-td">TÂM ĐIỂM 2020</span> là chuỗi hội thảo trực tuyến hàng tuần chuyên ngành tim mạch sẽ trình làng vào tháng 6/2020. <span class="form-td">TÂM ĐIỂM 2020</span> có hình thức tọa đàm mới cùng với các chuyên gia hàng đầu ngành tim mạch và y học về các chủ đề chuyên sâu, chia sẻ kinh nghiệm, thực hành lâm sàng, cập nhật tim mạch 24/7, diễn đàn trao đổi với bác sỹ.</p>
+
+                        <p>
+                            <p style="margin: 0"><span class="form-td">TÂM ĐIỂM 2020</span></p>
+                            <p style="margin: 0;font-weight: bold;"><span>CẬP NHẬT - CHUYÊN SÂU - THỰC TIỄN</span></p>
+                            <P>Sáng thứ 7 hàng tuần, từ 9:00 - 10:00</P>
+                        </p>
+                    </div>
+                    <div class="section-title text-center">
+                        <h2>Quý vị cần Đăng Nhập để xem trực tuyến</h2>
+                    </div>
+                    <div class="form">
+                        <ul class="tab-group">
+                            <li class="tab active"><a href="#signup">Đăng ký</a></li>
+                            <li class="tab"><a href="#login">Đăng Nhập</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="signup">   
+                                <h1>Thông tin đăng ký</h1>
+                                <form action="/" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="field-wrap">
+                                                <label>
+                                                    Tên<span class="req">*</span>
+                                                </label>
+                                                <input type="text" required autocomplete="off" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field-wrap">
+                                                <label>
+                                                    Họ<span class="req">*</span>
+                                                </label>
+                                                <input type="text"required autocomplete="off"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <label>
+                                          Điện Thoại<span class="req">*</span>
+                                        </label>
+                                        <input type="number"required autocomplete="off"/>
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <label>
+                                          Email<span class="req">*</span>
+                                        </label>
+                                        <input type="email"required autocomplete="off"/>
+                                    </div>
+                                    
+                                    <div class="field-wrap">
+                                        <label>
+                                          Chức Danh <span class="req">*</span>
+                                        </label>
+                                        <input type="text"required autocomplete="off"/>
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <label>
+                                          Đơn Vị<span class="req">*</span>
+                                        </label>
+                                        <input type="text"required autocomplete="off"/>
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <label>
+                                          Mật Khẩu<span class="req">*</span>
+                                        </label>
+                                        <input type="password"required autocomplete="off"/>
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <label>
+                                          Nhập Lại Mật Khẩu<span class="req">*</span>
+                                        </label>
+                                        <input type="password"required autocomplete="off"/>
+                                    </div>
+                                    <button type="submit" class="button button-block"/>Đăng Ký</button>  
+                                </form>
+                            </div>
+                            
+                            <div id="login">   
+                                <h1>Chào Mừng!</h1>  
+                                <form action="/" method="post">        
+                                    <div class="field-wrap">
+                                        <label>
+                                          Email<span class="req">*</span>
+                                        </label>
+                                        <input type="email"required autocomplete="off"/>
+                                    </div>
+                                  
+                                    <div class="field-wrap">
+                                        <label>
+                                          Mật Khẩu<span class="req">*</span>
+                                        </label>
+                                        <input type="password"required autocomplete="off"/>
+                                    </div>
+                                      
+                                    <p class="forgot"><a href="#" data-toggle="modal" data-target="#exampleModal">Quên Mật Khẩu</a></p>
+                                  
+                                    <button class="button button-block"/>Đăng Nhập</button> 
+                                </form>
+                            </div>    
+                          </div><!-- tab-content -->  
+                    </div> <!-- /form -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Quên mật khẩu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-modal">
+                    <div class="input-group">
+                        <input class="input-group__input" id="email" type="email" placeholder=" " required>
+                        <label class="input-group__label" for="email">Nhập email</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Gửi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- footer -->
+
+    <footer class="text-center">
+        <div class="footer">
+            <h2>Hội Tim Mạch Học Việt Nam</h2>
+            <p><a href="#">Địa chỉ: Bệnh viện Bạch Mai - Số 78 Giải phóng, Đống Đa, Hà Nội.</a></p>
+            <p><a href="#">Email: info@vnha.org.vn</a> | <a href="#">Điện Thoại: 0123456789</a></p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="asset/bootstrap/js/bootstrap.min.js" defer></script>
+
+    <script type="text/javascript" src="asset/js/menu-mobile.js"></script>
+
+    <!-- js login -->
+    <script type="text/javascript">
+        $('.form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+          var $this = $(this),
+              label = $this.prev('label');
+
+              if (e.type === 'keyup') {
+                    if ($this.val() === '') {
+                  label.removeClass('active highlight');
+                } else {
+                  label.addClass('active highlight');
+                }
+            } else if (e.type === 'blur') {
+                if( $this.val() === '' ) {
+                    label.removeClass('active highlight'); 
+                    } else {
+                    label.removeClass('highlight');   
+                    }   
+            } else if (e.type === 'focus') {
+              
+              if( $this.val() === '' ) {
+                    label.removeClass('highlight'); 
+                    } 
+              else if( $this.val() !== '' ) {
+                    label.addClass('highlight');
+                    }
+            }
+
+        });
+
+        $('.tab a').on('click', function (e) {
+          
+          e.preventDefault();
+          
+          $(this).parent().addClass('active');
+          $(this).parent().siblings().removeClass('active');
+          
+          target = $(this).attr('href');
+
+          $('.tab-content > div').not(target).hide();
+          
+          $(target).fadeIn(600);
+          
+        });
+    </script>
+</body>
+</html>

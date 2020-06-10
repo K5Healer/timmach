@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sửa thông tin hội viên</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header-page">
+        <div class="top-header clearfix">
+            <div class="container">
+                <div class="left-top-header">
+                    <span><a href="trangchu.html">TÂM ĐIỂM 2020 - HỘI TIM MẠCH HỌC VIỆT NAM</a></span>
+                </div>
+                <div class="right-top-header">
+                    <!-- <p><a href="login-out.html">Đăng ký</a></p>
+                    <p><a href="login-out.html">Đăng nhập</a></p> -->
+
+                    <p><a href="#">Thoát</a></p>
+                    <p><a href="infomation.html">Khánh Nguyễn</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-header clearfix">
+            <div class="container">
+                <div class="logo">
+                    <a href="trangchu.html">
+                        <img src="asset/img/logo.png">
+                    </a>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="trangchu.html"><i class="fa fa-home"></i> Trang chủ</a>
+                        </li>
+                        <li><a href="#"><img src="asset/img/live.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="menu-mobile">
+        <div class="menu-mobile-content clearfix">
+            <a href="trangchu.html">
+                <img src="asset/img/logo.png">
+            </a>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="trangchu.html">Trang chủ</a>
+          <a href="infomation.html">Tài khoản</a>
+            <a href="#">Thoát</a>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="content-wrap" style="padding-top: 30px;margin-bottom: 30px;">
+        <div class="container">
+            <h1>Chỉnh sửa thông tin hội viên</h1>
+            <hr>
+            
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Tên hội viên (tối đa 50 ký tự):</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Giới tính:</span>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-control">
+                        <option>Nam</option>
+                        <option>Nữ</option>
+                        <option>Khác</option>
+                    </select>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Ngày sinh:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="date" name="date" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Cơ quan công tác hiện nay:</span>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row info-row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <span>Tìm đơn vị:</span>
+                    <input type="text" name="" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row info-row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <span>
+                        <p><input type="checkbox" name=""> 1. Bệnh viện Bạch Mai</p>
+                        <p><input type="checkbox" name=""> 2. Bệnh viện Bạch Mai</p>
+                    </span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Khoa/ Phòng ban:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Chức vụ:</span>
+                </div>
+                <div class="col-md-6">
+                    <p><input type="checkbox" name=""> 1. BS điều dưỡng</p>
+                    <p><input type="checkbox" name=""> 2. BSCK I</p>
+                    <p><input type="checkbox" name=""> 3. BSCK II</p>
+                    <p><input type="checkbox" name=""> 4. Cardiologist</p>
+                    <p><input type="checkbox" name=""> 5. Điều dưỡng</p>
+                    <p><input type="checkbox" name=""> 6. Giám Đốc</p>
+                    <p><input type="checkbox" name=""> 7. Giảng Viên</p>
+                    <p><input type="checkbox" name=""> 8.  Phó Giám Đốc</p>
+                    <p><input type="checkbox" name=""> 9.  Phó Trưởng Khoa/Phó trưởng phòng ban</p>
+                    <p><input type="checkbox" name=""> 10. Trưởng khoa/Trưởng phòng ban/Chủ nhiệm khoa</p>
+                    <p><input type="checkbox" name=""> 11. Trưởng phòng khám</p>
+                    <p><input type="checkbox" name=""> 12. Khác</p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Học hàm/ học vị:</span>
+                </div>
+                <div class="col-md-6">
+                    <p><input type="checkbox" name=""> 1. Giáo sư (GS.)</p>
+                    <p><input type="checkbox" name=""> 2. Phó Giáo sư (PGS.)</p>
+                    <p><input type="checkbox" name=""> 3. Tiến sỹ (TS.)</p>
+                    <p><input type="checkbox" name=""> 4. Thạc sỹ (ThS.)</p>
+                    <p><input type="checkbox" name=""> 5. Bác sỹ (BS.)</p>
+                    <p><input type="checkbox" name=""> 6.  Dược sỹ (DS.)</p>
+                    <p><input type="checkbox" name=""> 7. Cử nhân (CN.)</p>
+                    <p><input type="checkbox" name=""> 8.  Kỹ thuật viên (KTV.)</p>
+                    <p><input type="checkbox" name=""> 9.  Điều dưỡng (DD.)</p>
+                    <p><input type="checkbox" name=""> 10.  Y tá (YT.)</p>
+                    <p><input type="checkbox" name=""> 11. Khác()</p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Điện thoại cơ quan:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="phone" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Địa chỉ nhà riêng:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="address" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Điện thoại nhà riêng:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="phone" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Email:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Địa chỉ nhận thư, tạp chí:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Hiện đang công tác với chuyên môn là:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Công việc khác kiêm nhiệm đang làm:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Tên hội viên (tối đa 50 ký tự):</span>
+                </div>
+                <div class="col-md-6">
+                    <p><input type="checkbox" name=""> 1. Hội nghị, hội thảo khoa học</p>
+                    <p><input type="checkbox" name=""> 2. Tạp chí và ấn phẩm</p>
+                    <p><input type="checkbox" name=""> 3. Tham gia các thăm dò, nghiên cứu</p>
+                    <p><input type="checkbox" name=""> 4. Thông tin hoạt động Hội</p>
+                    <p><input type="checkbox" name=""> 5. Khác</p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Người giới thiệu thứ nhất:</span>
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Họ và tên:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Nơi công tác:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Người giới thiệu thứ hai:</span>
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Họ và tên:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Nơi công tác:</span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Mã hội viên:</span>
+                </div>
+                <div class="col-md-6">
+                    <p><span style="font-weight: bold;">VNHA10341</span></p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row info-row">
+                <div class="col-md-3">
+                    <span>Mật khẩu:</span>
+                </div>
+                <div class="col-md-6">
+                    <p><input type="text" name="pass" class="form-control"></p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>  
+
+            <div class="row info-row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary">Cập nhật</button>
+                    <button type="button" class="btn btn-primary">Nhập lại</button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>   
+
+            <div class="row info-row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6"></div>
+                <div class="col-md-3 text-right">
+                    <button type="button" class="btn btn-primary">
+                        <a href="infomation.html" style="color: #fff;">Quay lại</a>
+                    </button>
+                </div>
+            </div>            
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="text-center">
+        <div class="footer">
+            <h2>Hội tim mạch học Việt Nam</h2>
+            <p><a href="#">Địa chỉ: Bệnh viện Bạch Mai - Số 78 Giải phóng, Đống Đa, Hà Nội.</a></p>
+            <p><a href="#">Email: info@vnha.org.vn</a></p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="asset/bootstrap/js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="asset/js/menu-mobile.js"></script>
+</body>
+</html>
